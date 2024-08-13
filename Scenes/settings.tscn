@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm8tu0l211uda"]
+
+[ext_resource type="Script" path="res://Scripts/Settings.gd" id="1_1eijf"]
+[ext_resource type="Texture2D" uid="uid://8qfgm4kinuid" path="res://Assets/settingsbg.png" id="1_wuyeu"]
+
+[node name="Settings" type="Node2D"]
+
+[node name="Settings" type="CanvasLayer" parent="."]
+script = ExtResource("1_1eijf")
+
+[node name="Settingsbg" type="Sprite2D" parent="."]
+position = Vector2(581, 328)
+scale = Vector2(0.582368, 0.634146)
+texture = ExtResource("1_wuyeu")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 176.0
+offset_bottom = 61.0
+theme_override_font_sizes/font_size = 30
+text = "Назад"
+
+[connection signal="pressed" from="Button" to="Settings" method="_on_button_pressed"]

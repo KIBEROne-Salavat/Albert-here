@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjbf1jxpgfdwn"]
+
+[ext_resource type="Texture2D" uid="uid://bjewftxed00sc" path="res://Assets/menubg.png" id="1_mi515"]
+[ext_resource type="Texture2D" uid="uid://c1s02talja2to" path="res://Assets/dialogbg.png" id="2_50mok"]
+
+[node name="Second" type="Node2D"]
+
+[node name="Menubg" type="Sprite2D" parent="."]
+position = Vector2(572, 320.75)
+scale = Vector2(0.589027, 0.640488)
+texture = ExtResource("1_mi515")
+
+[node name="Dialogbg" type="Sprite2D" parent="."]
+position = Vector2(572, 406)
+scale = Vector2(2.23828, 1)
+texture = ExtResource("2_50mok")
+
+[node name="DialogStart" type="Label" parent="."]
+offset_left = 73.0
+offset_top = 560.0
+offset_right = 1145.0
+offset_bottom = 665.0
